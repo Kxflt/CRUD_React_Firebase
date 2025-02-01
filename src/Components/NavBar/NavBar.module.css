@@ -1,35 +1,31 @@
-/* .navbar {
-  background-color: #f8f9fa;
+.navbar {
+  background-color: var(--primary);
   padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navList {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navItem {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .navItem a,
 .navItem button {
+  color: var(--background);
   text-decoration: none;
-  color: #333;
   font-weight: 500;
+  transition: color 0.3s ease;
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.navItem a:hover,
-.navItem button:hover {
-  background-color: #e9ecef;
 }
 
 .navItem button {
@@ -37,39 +33,11 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  margin-bottom: 1rem;
+  /* Asegura que el botón use la misma fuente */
 }
 
-@media (max-width: 768px) {
-  .navList {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navItem {
-    margin-left: 0;
-    margin-bottom: 0.5rem;
-  }
-} */
-.navbar {
-  display: flex;
-  flex-grow: 1;
-  align-items: end;
-  margin-left: 25%;
-}
-
-.navList {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.navItem {
-  margin-right: 1rem;
-}
-
-.userGreeting {
-  border: 1 solid black;
-  margin-left: auto;
-  font-weight: bold;
+.navItem a:hover,
+.navItem button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }

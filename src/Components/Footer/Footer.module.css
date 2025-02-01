@@ -1,45 +1,42 @@
-/* src/components/Footer.module.css */
 .footer {
-  background-color: #333;
-  color: white;
-  padding: 2em;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 1.5rem;
   text-align: center;
-  margin-top: 100%;
+  bottom: 0;
+  width: 100%;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+.footerContent {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding-top: 1%;
+  gap: 1rem;
 }
 
-.logoContainer {
-  margin-bottom: 20px;
-}
-
-.companyLogo {
-  width: 100px;
-  height: auto;
-}
-
-.socialIcons {
-  margin-bottom: 20px;
+.socialLinks {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.socialIcon {
-  color: white;
+.socialLinks a {
+  color: var(--background);
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
-.socialIcon:hover {
-  color: #ccc;
+.socialLinks a:hover {
+  color: var(--accent);
 }
 
-.address {
-  font-size: 0.9em;
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.socialLinks svg {
+  width: 24px; /* Tamaño específico */
+  height: 24px;
+  fill: var(--background);
 }
