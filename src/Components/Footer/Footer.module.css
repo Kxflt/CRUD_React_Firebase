@@ -1,0 +1,45 @@
+/* src/components/Footer.module.css */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 2em;
+  text-align: center;
+  margin-top: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 100px;
+  height: auto;
+}
+
+.socialIcons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcon {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #ccc;
+}
+
+.address {
+  font-size: 0.9em;
+}
