@@ -1,11 +1,14 @@
 // src/pages/Home.jsx
 
-import styles from "./Home.module.css";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 const Home = () => {
   return (
-    <div className={styles.home}>
-      <h1>Bienvenido a Home</h1>
+    <div className="main-content">
+      <main>
+        <h1>Bienvenido a Home</h1>
+      </main>
+      <Sidebar />
     </div>
   );
 };
