@@ -64,7 +64,8 @@ const Register = () => {
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {/* {error && <p style={{ color: "red" }}>{error}</p>} */}
+        {error && <p className="error-message">{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
         <Button type="submit">Registrarse</Button>
       </form>

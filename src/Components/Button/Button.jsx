@@ -24,10 +24,4 @@ Button.propTypes = {
   variant: PropTypes.oneOf(["primary", "secondary", "tertiary"]),
 };
 
-Button.defaultProps = {
-  onClick: () => {},
-  type: "button",
-  variant: "primary",
-};
-
 export default Button;
