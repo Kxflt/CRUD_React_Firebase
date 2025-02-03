@@ -36,7 +36,7 @@
   font-size: 0.9rem;
 }
 .socialLinks svg {
-  width: 24px; /* Tamaño específico */
+  width: 24px;
   height: 24px;
   fill: var(--background);
 }

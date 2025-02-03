@@ -1,7 +1,8 @@
 import { useState } from "react";
-import styles from "./Register.module.css";
 import { signUp } from "../../firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Button from "../../Components/Button/Button";
+import styles from "./Register.module.css";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -65,7 +66,7 @@ const Register = () => {
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
         {success && <p style={{ color: "green" }}>{success}</p>}
-        <button type="submit">Registrarse</button>
+        <Button type="submit">Registrarse</Button>
       </form>
     </div>
   );

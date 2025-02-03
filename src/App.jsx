@@ -4,7 +4,6 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
-import Profile from "./pages/Profile/Profile";
 import User from "./pages/User/User";
 import "./App.css";
 // import Catalog from "./pages/Catalog";
@@ -18,7 +17,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/profile" element={<Profile />} />
         <Route path="/user" element={<User />} />
         {/* <Route path="/catalog" element={<Catalog />} /> */}
       </Routes>

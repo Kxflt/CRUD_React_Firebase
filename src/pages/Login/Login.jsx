@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Login.module.css";
 import { signIn } from "../../firebase/auth";
 import { useNavigate } from "react-router-dom";
+import Button from "../../Components/Button/Button";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -40,7 +41,8 @@ const Login = () => {
           />
         </div>
         {error && <p style={{ color: "red" }}>{error}</p>}
-        <button type="submit">Iniciar sesión</button>
+
+        <Button type="submit">Iniciar sesión</Button>
       </form>
     </div>
   );
