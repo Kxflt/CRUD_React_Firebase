@@ -22,6 +22,7 @@ body {
 main {
   flex: 1;
   padding: 2rem;
+  margin-left: 50%;
 }
 
 h1,
@@ -57,18 +58,18 @@ button:hover {
   background-color: var(--secondary);
 }
 
-input,
+/* input,
 textarea {
   border: 1px solid var(--secondary);
   padding: 0.5rem;
   margin-bottom: 1rem;
-}
+} */
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
-}
+} */
 .error-message {
   display: flex;
   text-align: center;

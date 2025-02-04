@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "./Sidebar.module.css";
+import styles from "./Sidebar.module.css";
 
 const Sidebar = () => {
   const [news, setNews] = useState([]);
@@ -21,14 +21,24 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="sidebar">
-      <h2>Programming News</h2>
+    <div className={styles.container}>
+      <h2 className={styles.header}>Programming News</h2>
       {news.map((item, index) => (
-        <div key={index} className="news-item">
-          {item.urlToImage && <img src={item.urlToImage} alt={item.title} />}
-          <h3>{item.title}</h3>
-          <p>{item.description}</p>
-          <a href={item.url} target="_blank" rel="noopener noreferrer">
+        <div key={index} className={styles.item}>
+          {item.urlToImage && (
+            <img
+              src={item.urlToImage}
+              alt={item.title}
+              className={styles.image}
+            />
+          )}
+          <h3 className={styles.headline}>{item.title}</h3>
+          <p className={styles.summary}>{item.description}</p>
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}>
             Read more
           </a>
         </div>
