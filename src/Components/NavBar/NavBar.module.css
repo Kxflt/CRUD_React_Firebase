@@ -1,6 +1,5 @@
 .navbar {
   background-color: var(--primary);
-  padding: 1rem;
 }
 
 .navList {
@@ -33,7 +32,7 @@
   border: none;
   cursor: pointer;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .navItem a:hover,
