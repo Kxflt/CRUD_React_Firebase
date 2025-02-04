@@ -31,32 +31,7 @@ const Header = () => {
       <h1 className={styles.companyName}>NOMBRE DE TU EMPRESA</h1>
 
       <NavBar user={user} handleLogout={handleLogout} />
-      {/* <nav className={styles.navbar}>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link to="/">Inicio</Link>
-          </li>
-          {user ? (
-            <>
-              <li className={styles.navItem}>
-                <Link to="/user">Mi Ficha</Link>
-              </li>
-              <li className={styles.navItem}>
-                <button onClick={handleLogout}>Cerrar sesión</button>
-              </li>
-            </>
-          ) : (
-            <>
-              <li className={styles.navItem}>
-                <Link to="/login">Iniciar sesión</Link>
-              </li>
-              <li className={styles.navItem}>
-                <Link to="/register">Registrarse</Link>
-              </li>
-            </>
-          )}
-        </ul>
-      </nav> */}
+
       {user && (
         <div className={styles.userGreeting}>
           Hola, {user.displayName || user.email}

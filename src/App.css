@@ -22,7 +22,9 @@ body {
 main {
   flex: 1;
   padding: 2rem;
-  margin-left: 50%;
+  margin-left: 320px; /* Ancho del sidebar + 20px */
+  margin-top: 120px; /* Altura del header */
+  margin-bottom: 100px; /* Altura del footer */
 }
 
 h1,
@@ -58,18 +60,6 @@ button:hover {
   background-color: var(--secondary);
 }
 
-/* input,
-textarea {
-  border: 1px solid var(--secondary);
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-} */
-
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-} */
 .error-message {
   display: flex;
   text-align: center;

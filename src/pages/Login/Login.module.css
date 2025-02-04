@@ -1,7 +1,7 @@
 /* src/pages/Login.module.css */
 .login {
   max-width: 400px;
-  margin: 40px auto;
+  margin: 20% auto;
   padding: 20px;
   background-color: var(--background);
   border: 1px solid #ddd;
